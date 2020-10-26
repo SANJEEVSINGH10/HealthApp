@@ -13,6 +13,16 @@ app.get("/mhealth.ejs", function(req,res){
     res.render("mhealth.ejs");
 });
 
+
+app.get("/mhealth2.ejs", function(req,res){
+    res.render("mhealth2.ejs");
+});
+
+app.get("/mhealthres.ejs", function(req,res){
+    res.render("mhealthres.ejs");
+});
+
+
 app.listen(3000, function(){
     console.log("Server started on port 3000.")
 });
