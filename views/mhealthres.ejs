@@ -32,14 +32,58 @@
         -ms-transform: translate(-50%,-90%);
         transform: translate(-50%,-90%);
       }
-      
+      #id1{
+          text-align: center;
+          padding: 10px;
+      }
+      #id2{
+        text-align: center;
+        padding: 10px;
+      }
+      #score{
+          text-align: center;
+          color: #4b7a47;
+          padding: 10px;
+      }  
+      #heading{
+        text-align: center;
+      }
+      #id3{
+        padding: 10px;
+        color: red;
+      }
+
     </style>
 </head>
 <body>
     <header>
         <h1><a href="/" id="head">Nirogi</a> </h1>
     </header>
-    <article></article>    
+        <div class="container">
+        <h1 id="heading">
+            <span id="id1">You have completed the test!</span><br><br>
+            <span id="id2">Your score is <span id="score"><%= score%> </span> <br></span>
+            You have
+            <span id="id3">
+              <% if(score >= 1 && score <= 4){ %>
+                  <span> Minimal depression</span> 
+              <% } %>
+              <% if(score >= 5 && score <= 9){ %>
+                <span> Mild depression</span> 
+              <% } %>
+              <% if(score >= 10 && score <= 14){ %>
+                <span> Moderate depression</span> 
+              <% } %>
+              <% if(score >= 15 && score <= 19){ %>
+                <span> Moderately severe depression</span> 
+              <% } %>
+              <% if(score >= 20 && score <= 27){ %>
+                <span> Severe depression</span> 
+              <% } %>
+            </span>
+        </h1> 
+        </div>
+
     <footer>
         <div class="row">
             <div class="col-3">Copyright  &#169 2020</div>
