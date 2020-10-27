@@ -14,7 +14,7 @@ This is a prototype of a Health Web App in which users can take free online ment
 
 ## Functionalities:
 
-* ### Mental Health Test:
+1. ### Mental Health Test:
 In this free online test, user has to answer 10 questions, each of which contains four choices. The user is awarded points on the basis of the following points system.
 
 #### Points System
@@ -32,7 +32,7 @@ After the test is completed, the user is assesed on the basis of these points. T
 * Moderately Severe depression - If the points are in between **15 to 19 (both inclusive)**
 * Severe Depression - If the points are in between **20 to 30 (both inclusive)**
 
-* ### Physical Health Test:
+2. ### Physical Health Test:
 In this free online test, user has to answer 10 questions, each of which contains four choices. The user is awarded points on the basis of the following points system.
 
 #### Points System
