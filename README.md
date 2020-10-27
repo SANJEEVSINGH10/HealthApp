@@ -14,7 +14,13 @@ This is a prototype of a Health Web App in which users can take free online ment
 
 ## Functionalities:
 
-### 1. Mental Health Test:
+### 1. Login/Signup:
+The user can signup using their email address and user's credentials will be stored in the database. The user can then Login using their email and password.
+
+[login page image]
+
+### 2. Mental Health Test:
+[Mental Test image]
 In this free online test, user has to answer 10 questions, each of which contains four choices. The user is awarded points on the basis of the following points system.
 
 
@@ -34,7 +40,8 @@ After the test is completed, the user is assesed on the basis of these points. T
 * Moderately Severe depression - If the points are in between **15 to 19 (both inclusive)**
 * Severe Depression - If the points are in between **20 to 30 (both inclusive)**
 
-### 2. Physical Health Test:
+### 3. Physical Health Test:
+[Physical Test image]
 In this free online test, user has to answer 10 questions, each of which contains four choices. The user is awarded points on the basis of the following points system.
 
 #### Points System
@@ -49,3 +56,6 @@ After the test is completed, the user is assesed on the basis of these points. T
 * drastically change your lifestyle - if the points are in between **0 to 10  (both inclusive)**
 * slighly change your lifestyle - If the points are in between **10 to 20 (both inclusive)**
 * a perfect lifestyle - If the points are in between **20 to 30 (both inclusive)**
+
+### 4. Make an appointment:
+The user can make an appointment to a doctor as per their convenience but this can only be done after the user has logged in to application. If the appointment is succesful the user will be notified via an email.
