@@ -52,7 +52,10 @@
         padding: 10px;
         color: red;
       }
-
+      #id4{
+        color: red;
+        font-weight: bold;
+      }
     </style>
 </head>
 <body>
@@ -65,7 +68,7 @@
             <span id="id2">Your score is <span id="score"><%= score%> </span> <br></span>
             You have
             <span id="id3">
-              <% if(score >= 1 && score <= 4){ %>
+              <% if(score >= 0 && score <= 4){ %>
                   <span> Minimal depression</span> 
               <% } %>
               <% if(score >= 5 && score <= 9){ %>
@@ -77,11 +80,23 @@
               <% if(score >= 15 && score <= 19){ %>
                 <span> Moderately severe depression</span> 
               <% } %>
-              <% if(score >= 20 && score <= 27){ %>
+              <% if(score >= 20 && score <= 30){ %>
                 <span> Severe depression</span> 
               <% } %>
             </span>
-        </h1> 
+        </h1> <br><br><br>
+        <p>
+          <strong>Here are some useful videos and articles which can help you:</strong>  <br>
+          <a href="https://screening.mhanational.org/content/i-hate-myself" class="link"> How to stop hating yourself</a><br>
+          <a href="https://screening.mhanational.org/content/im-afraid-tell-anyone-i-feel-depressed" class="link">I am afraid to tell anyone I am depressed.</a> <br>
+          <a href="https://screening.mhanational.org/content/i-dont-feel-i-belong-anywhere" class="link">How to not feel like you don't belong anywhere. </a> <br>
+          <a href="https://www.youtube.com/watch?v=_re6AX3Mi4s&ab_channel=TEDxTalks" class="link">Tedx Talk on How to get over depression in 3 easy steps. </a> <br>
+        </p>
+  
+        <span id="warning">
+          <span id="id4">Warning:</span>  This is just a prototype and is, in no means, exhaustive in its diagnostics. If you think you are not feeling well, 
+          please seek professional guidance!
+        </span> 
         </div>
 
     <footer>
