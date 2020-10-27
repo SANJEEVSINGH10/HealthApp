@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Nirogi</title>
+    <link rel="stylesheet" href="stylesheets/index.css">
+    <style>
+      #id1{
+          text-align: center;
+          padding: 10px;
+      }
+      #id2{
+        text-align: center;
+        padding: 10px;
+      }
+      #score{
+          text-align: center;
+          color: #4b7a47;
+          padding: 10px;
+      }  
+      #heading{
+        text-align: center;
+      }
+      #id3{
+        padding: 10px;
+        color: red;
+      }
+      #id4{
+        color: red;
+        font-weight: bold;
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><a href="/" id="head">Nirogi</a> </h1>
+    </header>
+        <div class="container">
+        <h1 id="heading">
+            <span id="id1">You have completed the test!</span><br><br>
+            <span id="id2">Your score is <span id="score"><%= score%> </span> <br></span>
+            You have
+            <span id="id3">
+              <% if(score >= 0 && score <= 10){ %>
+                  <span> to drastically change your lifestyle.</span> 
+              <% } %>
+                <% if(score >= 11 && score <= 20){ %>
+                <span> to slighly change your lifestyle.</span> 
+              <% } %>
+              <% if(score >= 21 && score <= 30){ %>
+                <span> a perfect lifestyle.</span> 
+              <% } %>
+            </span>
+        </h1> <br><br><br>
+        <p>
+          <strong>Here are some useful videos and articles which can help you:</strong>  <br>
+          <a href="https://screening.mhanational.org/content/i-hate-myself" class="link"> How to stop hating yourself</a><br>
+          <a href="https://screening.mhanational.org/content/im-afraid-tell-anyone-i-feel-depressed" class="link">I am afraid to tell anyone I am depressed.</a> <br>
+          <a href="https://screening.mhanational.org/content/i-dont-feel-i-belong-anywhere" class="link">How to not feel like you don't belong anywhere. </a> <br>
+          <a href="https://www.youtube.com/watch?v=_re6AX3Mi4s&ab_channel=TEDxTalks" class="link">Tedx Talk on How to get over depression in 3 easy steps. </a> <br>
+        </p>
+  
+        <span id="warning">
+          <span id="id4">Warning:</span>  This is just a prototype and is, in no means, exhaustive in its diagnostics. If you think you are not feeling well, 
+          please seek professional guidance!
+        </span> 
+        </div>
+
+    <footer>
+        <div class="row">
+            <div class="col-3">Copyright  &#169 2020</div>
+            <div class="col-3 "></div>
+            <div class="col-3"></div>
+            <div class="col-3">
+                <a href="https://www.linkedin.com/in/shubham-jain-79b74712a/"><img id="linked" src="logos/linked.png" alt=""></a>
+                <a href="https://github.com/shubham00jain"><img src="logos/github.png" alt="" id="git"></a>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+
+</html>

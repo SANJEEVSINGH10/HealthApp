@@ -48,6 +48,42 @@ app.get("/mhealthres.ejs", function(req,res){
     res.render("mhealthres.ejs", {score,score});
 });
 
+app.get("/phealth", function(req,res){
+    res.render("phealth")
+});
+
+
+app.get("/phealth2", function(req,res){
+    score = 0
+    for(var data in req.query){
+        if (req.query.hasOwnProperty(data)) {
+            if(req.query[data] === 'second')
+                score = score + 1
+            else if(req.query[data] === 'third')
+                score = score + 2
+            else if(req.query[data] === 'fourth')
+                score = score + 3
+        }
+    }
+
+    res.render("phealth2");
+});
+
+app.get("/phealthres", function(req,res){
+    
+    for(var data in req.query){
+        if (req.query.hasOwnProperty(data)) {
+            if(req.query[data] === 'second')
+                score = score + 1
+            else if(req.query[data] === 'third')
+                score = score + 2
+            else if(req.query[data] === 'fourth')
+                score = score + 3
+        }
+    }
+    
+    res.render("phealthres", {score,score});
+});
 
 app.listen(3000, function(){
     console.log("Server started on port 3000.")
