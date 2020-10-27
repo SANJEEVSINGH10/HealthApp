@@ -31,3 +31,19 @@ After the test is completed, the user is assesed on the basis of these points. T
 * Moderate depression - If the points are in between **10 to 14 (both inclusive)**
 * Moderately Severe depression - If the points are in between **15 to 19 (both inclusive)**
 * Severe Depression - If the points are in between **20 to 30 (both inclusive)**
+
+* ### Physical Health Test:
+In this free online test, user has to answer 10 questions, each of which contains four choices. The user is awarded points on the basis of the following points system.
+
+#### Points System
+The maximum number of points a user can have is 30.
+Choosing:
+* Almost never - awards 0 points
+* Sometimes - awards 1 points
+* Often - awards 2 points
+* Most of the time - awards 3 points
+
+After the test is completed, the user is assesed on the basis of these points. The assesment follows the following criteria:
+* drastically change your lifestyle - if the points are in between **0 to 10  (both inclusive)**
+* slighly change your lifestyle - If the points are in between **10 to 20 (both inclusive)**
+* a perfect lifestyle - If the points are in between **20 to 30 (both inclusive)**
