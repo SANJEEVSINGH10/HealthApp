@@ -52,7 +52,6 @@ app.get("/phealth", function(req,res){
     res.render("phealth")
 });
 
-
 app.get("/phealth2", function(req,res){
     score = 0
     for(var data in req.query){
@@ -83,6 +82,14 @@ app.get("/phealthres", function(req,res){
     }
     
     res.render("phealthres", {score,score});
+});
+
+app.get("/login", function(req,res){
+    res.render("login");
+});
+
+app.get("/signup", function(req,res){
+    res.render("signup");
 });
 
 app.listen(3000, function(){
