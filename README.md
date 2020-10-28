@@ -4,6 +4,7 @@ This is a prototype of a Health Web App in which users can take free online ment
 ## Technologies used:
 * #### Node.js, Express.js (for backend server)
 * #### HTML, CSS, Bootstrap (for frontend markup and styling)
+* #### Ejs (for templating)
 * #### MongoDB (for a database to store/retrieve user's login credentials)
 
 ## Version Control:
