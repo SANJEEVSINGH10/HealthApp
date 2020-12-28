@@ -1,26 +1,25 @@
-.mental{
-    padding-left: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-  h2{
-    text-align: center;
-  }
-  input[type="radio"] {
-    margin-bottom: 0;  
-    padding: 0;
-  }
-  fieldset{
-    padding: 10px;
-  }
-  fieldset p{
-    font-weight: bold;
-  }
-  #submit{
-    margin: 0;
-    position: absolute;
-    right: 50%;
-    -ms-transform: translate(-50%,-90%);
-    transform: translate(-50%,-90%);
-  }
-  
+.mental {
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+h2 {
+  text-align: center;
+}
+input[type="radio"] {
+  margin-bottom: 0;
+  padding: 0;
+}
+fieldset {
+  padding: 10px;
+}
+fieldset p {
+  font-weight: bold;
+}
+#submit {
+  margin: 0;
+  position: absolute;
+  right: 50%;
+  -ms-transform: translate(-50%, -90%);
+  transform: translate(-50%, -90%);
+}

@@ -1,105 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <title>Nirogi</title>
-    <link rel="stylesheet" href="stylesheets/index.css">
-    <link rel="stylesheet" href="stylesheets/mhealth.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <title>Nirogi</title>
+  <link rel="stylesheet" href="stylesheets/index.css">
+  <link rel="stylesheet" href="stylesheets/mhealth.css">
 </head>
+
 <body>
   <nav class="navbar navbar-expand-sm">
-    <a class="navbar" href="/"><h1>Nirogi</h1></a>      
+    <a class="navbar" href="/">
+      <h1>Nirogi</h1>
+    </a>
     <div class="navbar-collapse">
       <ul class="mr-auto"></ul>
       <a href="/login"><button class="btn login" type="submit">Login</button></a>
     </div>
   </nav>
-    <div class="container">
-      <h2>DEPRESSION TEST</h2>
-      <div clas="mental container">
-        <form action="/mhealth2.ejs" class="mental">
-          <fieldset>
-            <p>1. Little interest or pleasure in doing things</p>
-            <input type="radio" class="first" name="option1" value="first" required>
-            <label for="male">Not at all</label><br>
-            <input type="radio" class="second" name="option1" value="second" required>
-            <label for="female">Several Days</label><br>
-            <input type="radio" class="third" name="option1" value="third" required>
-            <label for="other">More than half the days</label><br>
-            <input type="radio" class="fourth" name="option1" value="fourth" required>
-            <label for="other">Nearly every day</label>
-              
-          </fieldset>
+  <div class="container">
+    <h2>DEPRESSION TEST</h2>
+    <div clas="mental container">
+      <form action="/mhealth2.ejs" class="mental">
+        <fieldset>
+          <p>1. Little interest or pleasure in doing things</p>
+          <input type="radio" class="first" name="option1" value="first" required>
+          <label for="male">Not at all</label><br>
+          <input type="radio" class="second" name="option1" value="second" required>
+          <label for="female">Several Days</label><br>
+          <input type="radio" class="third" name="option1" value="third" required>
+          <label for="other">More than half the days</label><br>
+          <input type="radio" class="fourth" name="option1" value="fourth" required>
+          <label for="other">Nearly every day</label>
 
-          <fieldset>
-            <p>2. Feeling down, depressed, or hopeless</p>
-            <input type="radio" class="first" name="option2" value="first" required>
-            <label for="male">Not at all</label><br>
-            <input type="radio" class="second" name="option2" value="second" required>
-            <label for="female">Several Days</label><br>
-            <input type="radio" class="third" name="option2" value="third" required>
-            <label for="other">More than half the days</label><br>
-            <input type="radio" class="fourth" name="option2" value="fourth" required>
-            <label for="other">Nearly every day</label>
-              
-          </fieldset>
+        </fieldset>
 
-          <fieldset>
-            <p>3. Trouble falling or staying asleep, or sleeping too much</p>
-            <input type="radio" class="first" name="option3" value="first" required>
-            <label for="male">Not at all</label><br>
-            <input type="radio" class="second" name="option3" value="second" required>
-            <label for="female">Several Days</label><br>
-            <input type="radio" class="third" name="option3" value="third" required>
-            <label for="other">More than half the days</label><br>
-            <input type="radio" class="fourth" name="option3" value="fourth" required>
-            <label for="other">Nearly every day</label>
-              
-          </fieldset>
-          
-          <fieldset>
-            <p>4. Feeling tired or having little energy</p>
-            <input type="radio" class="first" name="option4" value="first" required>
-            <label for="male">Not at all</label><br>
-            <input type="radio" class="second" name="option4" value="second" required>
-            <label for="female">Several Days</label><br>
-            <input type="radio" class="third" name="option4" value="third" required>
-            <label for="other">More than half the days</label><br>
-            <input type="radio" class="fourth" name="option4" value="fourth" required>
-            <label for="other">Nearly every day</label>
-              
-          </fieldset>
+        <fieldset>
+          <p>2. Feeling down, depressed, or hopeless</p>
+          <input type="radio" class="first" name="option2" value="first" required>
+          <label for="male">Not at all</label><br>
+          <input type="radio" class="second" name="option2" value="second" required>
+          <label for="female">Several Days</label><br>
+          <input type="radio" class="third" name="option2" value="third" required>
+          <label for="other">More than half the days</label><br>
+          <input type="radio" class="fourth" name="option2" value="fourth" required>
+          <label for="other">Nearly every day</label>
 
-          <fieldset>
-            <p>5. Poor appetite or overeating</p>
-            <input type="radio" class="first" name="option5" value="first" required>
-            <label for="male">Not at all</label><br>
-            <input type="radio" class="second" name="option5" value="second" required>
-            <label for="female">Several Days</label><br>
-            <input type="radio" class="third" name="option5" value="third" required>
-            <label for="other">More than half the days</label><br>
-            <input type="radio" class="fourth" name="option5" value="fourth" required>
-            <label for="other">Nearly every day</label>
-              
-          </fieldset>
-          <input type="submit" name="Continue" id="submit" value="Continue" class="btn btn-primary">
+        </fieldset>
+
+        <fieldset>
+          <p>3. Trouble falling or staying asleep, or sleeping too much</p>
+          <input type="radio" class="first" name="option3" value="first" required>
+          <label for="male">Not at all</label><br>
+          <input type="radio" class="second" name="option3" value="second" required>
+          <label for="female">Several Days</label><br>
+          <input type="radio" class="third" name="option3" value="third" required>
+          <label for="other">More than half the days</label><br>
+          <input type="radio" class="fourth" name="option3" value="fourth" required>
+          <label for="other">Nearly every day</label>
+
+        </fieldset>
+
+        <fieldset>
+          <p>4. Feeling tired or having little energy</p>
+          <input type="radio" class="first" name="option4" value="first" required>
+          <label for="male">Not at all</label><br>
+          <input type="radio" class="second" name="option4" value="second" required>
+          <label for="female">Several Days</label><br>
+          <input type="radio" class="third" name="option4" value="third" required>
+          <label for="other">More than half the days</label><br>
+          <input type="radio" class="fourth" name="option4" value="fourth" required>
+          <label for="other">Nearly every day</label>
+
+        </fieldset>
+
+        <fieldset>
+          <p>5. Poor appetite or overeating</p>
+          <input type="radio" class="first" name="option5" value="first" required>
+          <label for="male">Not at all</label><br>
+          <input type="radio" class="second" name="option5" value="second" required>
+          <label for="female">Several Days</label><br>
+          <input type="radio" class="third" name="option5" value="third" required>
+          <label for="other">More than half the days</label><br>
+          <input type="radio" class="fourth" name="option5" value="fourth" required>
+          <label for="other">Nearly every day</label>
+
+        </fieldset>
+        <input type="submit" name="Continue" id="submit" value="Continue" class="btn btn-primary">
+    </div>
+  </div>
+
+  <footer>
+    <div class="row">
+      <div class="col-3">Copyright &#169 2020</div>
+      <div class="col-3 "></div>
+      <div class="col-3"></div>
+      <div class="col-3">
+        <a href="https://www.linkedin.com/in/shubham-jain-79b74712a/"><img id="linked" src="logos/linked.png"
+            alt=""></a>
+        <a href="https://github.com/shubham00jain"><img src="logos/github.png" alt="" id="git"></a>
       </div>
     </div>
-    
-    <footer>
-        <div class="row">
-            <div class="col-3">Copyright  &#169 2020</div>
-            <div class="col-3 "></div>
-            <div class="col-3"></div>
-            <div class="col-3">
-                <a href="https://www.linkedin.com/in/shubham-jain-79b74712a/"><img id="linked" src="logos/linked.png" alt=""></a>
-                <a href="https://github.com/shubham00jain"><img src="logos/github.png" alt="" id="git"></a>
-            </div>
-        </div>
-    </footer>
-    
+  </footer>
+
 </body>
 
 </html>

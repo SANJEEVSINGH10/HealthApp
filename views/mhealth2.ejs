@@ -1,106 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <title>Nirogi</title>
-    <link rel="stylesheet" href="stylesheets/index.css">
-    <link rel="stylesheet" href="stylesheets/mhealth.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <title>Nirogi</title>
+  <link rel="stylesheet" href="stylesheets/index.css">
+  <link rel="stylesheet" href="stylesheets/mhealth.css">
 </head>
+
 <body>
   <nav class="navbar navbar-expand-sm">
-    <a class="navbar" href="/"><h1>Nirogi</h1></a>      
+    <a class="navbar" href="/">
+      <h1>Nirogi</h1>
+    </a>
     <div class="navbar-collapse">
       <ul class="mr-auto"></ul>
       <a href="/login"><button class="btn login" type="submit">Login</button></a>
     </div>
   </nav>
 
-    <div class="container">
-      <h2>DEPRESSION TEST</h2>
-      <div clas="mental container">
-        <form action="/mhealthres.ejs" class="mental">
-          <fieldset>
-            <p>6. Feeling bad about yourself - or that you are a failure or have let yourself or your family down</p>
-            <input type="radio" class="first" name="option6" value="first" required>
-            <label for="male">Not at all</label><br>
-            <input type="radio" class="second" name="option6" value="second" required>
-            <label for="female">Several Days</label><br>
-            <input type="radio" class="third" name="option6" value="third" required>
-            <label for="other">More than half the days</label><br>
-            <input type="radio" class="fourth" name="option6" value="fourth" required>
-            <label for="other">Nearly every day</label>
-              
-          </fieldset>
+  <div class="container">
+    <h2>DEPRESSION TEST</h2>
+    <div clas="mental container">
+      <form action="/mhealthres.ejs" class="mental">
+        <fieldset>
+          <p>6. Feeling bad about yourself - or that you are a failure or have let yourself or your family down</p>
+          <input type="radio" class="first" name="option6" value="first" required>
+          <label for="male">Not at all</label><br>
+          <input type="radio" class="second" name="option6" value="second" required>
+          <label for="female">Several Days</label><br>
+          <input type="radio" class="third" name="option6" value="third" required>
+          <label for="other">More than half the days</label><br>
+          <input type="radio" class="fourth" name="option6" value="fourth" required>
+          <label for="other">Nearly every day</label>
 
-          <fieldset>
-            <p>7. Trouble concentrating on things, such as reading the newspaper or watching television</p>
-            <input type="radio" class="first" name="option7" value="first" required>
-            <label for="male">Not at all</label><br>
-            <input type="radio" class="second" name="option7" value="second" required>
-            <label for="female">Several Days</label><br>
-            <input type="radio" class="third" name="option7" value="third" required>
-            <label for="other">More than half the days</label><br>
-            <input type="radio" class="fourth" name="option7" value="fourth" required>
-            <label for="other">Nearly every day</label>
-              
-          </fieldset>
+        </fieldset>
 
-          <fieldset>
-            <p>8. Moving or speaking so slowly that other people could have noticed</p>
-            <input type="radio" class="first" name="option8" value="first" required>
-            <label for="male">Not at all</label><br>
-            <input type="radio" class="second" name="option8" value="second" required>
-            <label for="female">Several Days</label><br>
-            <input type="radio" class="third" name="option8" value="third" required>
-            <label for="other">More than half the days</label><br>
-            <input type="radio" class="fourth" name="option8" value="fourth" required>
-            <label for="other">Nearly every day</label>
-              
-          </fieldset>
-          
-          <fieldset>
-            <p>9. Thoughts that you would be better off dead, or of hurting yourself</p>
-            <input type="radio" class="first" name="option9" value="first" required>
-            <label for="male">Not at all</label><br>
-            <input type="radio" class="second" name="option9" value="second" required>
-            <label for="female">Several Days</label><br>
-            <input type="radio" class="third" name="option9" value="third" required>
-            <label for="other">More than half the days</label><br>
-            <input type="radio" class="fourth" name="option9" value="fourth" required>
-            <label for="other">Nearly every day</label>
-              
-          </fieldset>
+        <fieldset>
+          <p>7. Trouble concentrating on things, such as reading the newspaper or watching television</p>
+          <input type="radio" class="first" name="option7" value="first" required>
+          <label for="male">Not at all</label><br>
+          <input type="radio" class="second" name="option7" value="second" required>
+          <label for="female">Several Days</label><br>
+          <input type="radio" class="third" name="option7" value="third" required>
+          <label for="other">More than half the days</label><br>
+          <input type="radio" class="fourth" name="option7" value="fourth" required>
+          <label for="other">Nearly every day</label>
 
-          <fieldset>
-            <p>10. If you checked off any problems, how difficult have these problems made it for you at work, home, or with other people?</p>
-            <input type="radio" class="first" name="option10" value="first" required>
-            <label for="male">Not at all</label><br>
-            <input type="radio" class="second" name="option10" value="second" required>
-            <label for="female">Several Days</label><br>
-            <input type="radio" class="third" name="option10" value="third" required>
-            <label for="other">More than half the days</label><br>
-            <input type="radio" class="fourth" name="option10" value="fourth" required>
-            <label for="other">Nearly every day</label>
-              
-          </fieldset>
-          <input type="submit" name="Continue" id="submit" value="Submit" class="btn btn-primary">
+        </fieldset>
+
+        <fieldset>
+          <p>8. Moving or speaking so slowly that other people could have noticed</p>
+          <input type="radio" class="first" name="option8" value="first" required>
+          <label for="male">Not at all</label><br>
+          <input type="radio" class="second" name="option8" value="second" required>
+          <label for="female">Several Days</label><br>
+          <input type="radio" class="third" name="option8" value="third" required>
+          <label for="other">More than half the days</label><br>
+          <input type="radio" class="fourth" name="option8" value="fourth" required>
+          <label for="other">Nearly every day</label>
+
+        </fieldset>
+
+        <fieldset>
+          <p>9. Thoughts that you would be better off dead, or of hurting yourself</p>
+          <input type="radio" class="first" name="option9" value="first" required>
+          <label for="male">Not at all</label><br>
+          <input type="radio" class="second" name="option9" value="second" required>
+          <label for="female">Several Days</label><br>
+          <input type="radio" class="third" name="option9" value="third" required>
+          <label for="other">More than half the days</label><br>
+          <input type="radio" class="fourth" name="option9" value="fourth" required>
+          <label for="other">Nearly every day</label>
+
+        </fieldset>
+
+        <fieldset>
+          <p>10. If you checked off any problems, how difficult have these problems made it for you at work, home, or
+            with other people?</p>
+          <input type="radio" class="first" name="option10" value="first" required>
+          <label for="male">Not at all</label><br>
+          <input type="radio" class="second" name="option10" value="second" required>
+          <label for="female">Several Days</label><br>
+          <input type="radio" class="third" name="option10" value="third" required>
+          <label for="other">More than half the days</label><br>
+          <input type="radio" class="fourth" name="option10" value="fourth" required>
+          <label for="other">Nearly every day</label>
+
+        </fieldset>
+        <input type="submit" name="Continue" id="submit" value="Submit" class="btn btn-primary">
+    </div>
+  </div>
+
+  <footer>
+    <div class="row">
+      <div class="col-3">Copyright &#169 2020</div>
+      <div class="col-3 "></div>
+      <div class="col-3"></div>
+      <div class="col-3">
+        <a href="https://www.linkedin.com/in/shubham-jain-79b74712a/"><img id="linked" src="logos/linked.png"
+            alt=""></a>
+        <a href="https://github.com/shubham00jain"><img src="logos/github.png" alt="" id="git"></a>
       </div>
     </div>
-    
-    <footer>
-        <div class="row">
-            <div class="col-3">Copyright  &#169 2020</div>
-            <div class="col-3 "></div>
-            <div class="col-3"></div>
-            <div class="col-3">
-                <a href="https://www.linkedin.com/in/shubham-jain-79b74712a/"><img id="linked" src="logos/linked.png" alt=""></a>
-                <a href="https://github.com/shubham00jain"><img src="logos/github.png" alt="" id="git"></a>
-            </div>
-        </div>
-    </footer>
-    
+  </footer>
+
 </body>
 
 </html>

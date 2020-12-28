@@ -1,86 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <title>Nirogi</title>
-    <link rel="stylesheet" href="stylesheets/index.css">
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background: #4b7a47;
-        }
-        form {border: 3px solid #f1f1f1;}
-        
-        input[type=email], input[type=password] {
-          width: 100%;
-          padding: 12px 20px;
-          margin: 8px 0;
-          display: inline-block;
-          border: 1px solid #ccc;
-          box-sizing: border-box;
-        }
-        
-        button {
-          background-color: #4CAF50;
-          color: white;
-          padding: 14px 20px;
-          margin: 8px 0;
-          border: none;
-          cursor: pointer;
-          width: 100%;
-        }
-        
-        button:hover {
-          opacity: 0.8;
-        }
-        
-        .cancelbtn {
-          width: auto;
-          padding: 10px 18px;
-          background-color: #f44336;
-        }
 
-        
-        span.psw {
-          float: right;
-          padding-top: 16px;
-        }
-        
-        @media screen and (max-width: 300px) {
-          span.psw {
-             display: block;
-             float: none;
-          }
-          .cancelbtn {
-             width: 100%;
-          }
-        }
-        .container{
-            width: 50%;
-            background: #f5f5f5 ;
-            margin-top: 50px;
-            border: black;
-        }
-    </style>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <title>Nirogi</title>
+  <link rel="stylesheet" href="stylesheets/index.css">
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #4b7a47;
+    }
+
+    form {
+      border: 3px solid #f1f1f1;
+    }
+
+    input[type=email],
+    input[type=password] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    button:hover {
+      opacity: 0.8;
+    }
+
+    .cancelbtn {
+      width: auto;
+      padding: 10px 18px;
+      background-color: #f44336;
+    }
+
+
+    span.psw {
+      float: right;
+      padding-top: 16px;
+    }
+
+    @media screen and (max-width: 300px) {
+      span.psw {
+        display: block;
+        float: none;
+      }
+
+      .cancelbtn {
+        width: 100%;
+      }
+    }
+
+    .container {
+      width: 50%;
+      background: #f5f5f5;
+      margin-top: 50px;
+      border: black;
+    }
+  </style>
 </head>
+
 <body>
-    <div class="container" id="main">
-        <form>
-            <div class="container">
-              <label for="uname"><b>Enter Email Address</b></label>
-              <input type="email" placeholder="Enter Email Address" name="email" required>
-              <label for="psw"><b>Password</b></label>
-              <input type="password" placeholder="Enter Password" name="psw" required>
-              <button type="submit">Signup</button>
-            </div>
-            <div class="container">
-              <a href="/"><button type="button" class="cancelbtn">Cancel</button></a>
-              <span class="psw">Existing User?<a href="/login">Log in!</a></span>
-            </div>
-          </form>
-    </div>
+  <div class="container" id="main">
+    <form>
+      <div class="container">
+        <label for="uname"><b>Enter Email Address</b></label>
+        <input type="email" placeholder="Enter Email Address" name="email" required>
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+        <button type="submit">Signup</button>
+      </div>
+      <div class="container">
+        <a href="/"><button type="button" class="cancelbtn">Cancel</button></a>
+        <span class="psw">Existing User?<a href="/login">Log in!</a></span>
+      </div>
+    </form>
+  </div>
 </body>
 
 </html>
