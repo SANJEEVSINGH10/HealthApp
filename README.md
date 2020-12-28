@@ -1,6 +1,8 @@
 # Health Web App
 This is a prototype of a Health Web App in which users can take free online mental and physical health tests and make an appointment to a doctor.
 
+Visit the hosted website: https://health-web-app.herokuapp.com/
+
 ## Technologies used:
 * #### Node.js, Express.js (for backend server)
 * #### HTML, CSS, Bootstrap (for frontend markup and styling)
