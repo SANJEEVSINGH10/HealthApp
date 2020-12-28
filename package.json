@@ -1,5 +1,6 @@
 {
   "name": "nirogi",
+  "start": "node app.js",
   "version": "1.0.0",
   "description": "A Web-app to help to lead a healthy life!",
   "main": "app.js",
