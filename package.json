@@ -1,9 +1,8 @@
 {
   "name": "nirogi",
-  "start": "node app.js",
   "version": "1.0.0",
   "description": "A Web-app to help to lead a healthy life!",
-  "main": "app.js",
+  "main": "server.js",
   "dependencies": {
     "ejs": "^3.1.5",
     "express": "^4.17.1",
@@ -12,8 +11,17 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "author": "Shubham Jain",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shubham00jain/Health-WebApp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shubham00jain/Health-WebApp/issues"
+  },
+  "homepage": "https://github.com/shubham00jain/Health-WebApp#readme"
 }
