@@ -38,6 +38,9 @@
       color: red;
       font-weight: bold;
     }
+    #help {
+      font-size: 13px;
+    }
   </style>
 </head>
 
@@ -71,27 +74,56 @@
                           <% if(score>= 15 && score <= 19){ %>
                               <span> Moderately severe depression</span>
                               <% } %>
-                                <% if(score>= 20 && score <= 30){ %>
+                                <% if(score>= 20){ %>
                                     <span> Severe depression</span>
                                     <% } %>
       </span>
     </h1> <br><br><br>
     <p>
-      <strong>Here are some useful videos and articles which can help you:</strong> <br>
-      <a href="https://screening.mhanational.org/content/i-hate-myself" class="link"> How to stop hating
-        yourself</a><br>
-      <a href="https://screening.mhanational.org/content/im-afraid-tell-anyone-i-feel-depressed" class="link">I am
-        afraid to tell anyone I am depressed.</a> <br>
-      <a href="https://screening.mhanational.org/content/i-dont-feel-i-belong-anywhere" class="link">How to not feel
-        like you don't belong anywhere. </a> <br>
-      <a href="https://www.youtube.com/watch?v=_re6AX3Mi4s&ab_channel=TEDxTalks" class="link">Tedx Talk on How to get
-        over depression in 3 easy steps. </a> <br>
+      <% if (score>0 && score<=15) { %>
+          <strong>Here are some useful videos and articles which can help you:</strong> <br>
+          <a href="https://www.youtube.com/watch?v=78nsxRxbf4w&ab_channel=TEDxTalks" class="link"> TEDx Talk on How to
+            be happy
+          </a><br>
+          <a href="https://screening.mhanational.org/content/im-afraid-tell-anyone-i-feel-depressed" class="link">I am
+            afraid to tell anyone I am depressed.</a> <br>
+          <a href="https://screening.mhanational.org/content/i-dont-feel-i-belong-anywhere" class="link">How to not feel
+            like you don't belong anywhere. </a> <br>
+          <a href="https://www.youtube.com/watch?v=_re6AX3Mi4s&ab_channel=TEDxTalks" class="link">Tedx Talk on How to
+            get
+            over depression in 3 easy steps. </a> <br>
+          <% } %>
+            <% if (score> 15) { %>
+              <strong>Here are some useful videos and articles which can help you:</strong> <br>
+              <a href="https://screening.mhanational.org/content/i-hate-myself" class="link"> How to stop hating
+                yourself</a><br>
+              <a href="https://www.youtube.com/watch?v=MiOVX7qKQ24&ab_channel=TEDxTalks" class="link"> TEDx talk on
+                Suicide,
+                depression, and the power of hope
+              </a><br>
+              <a href="https://screening.mhanational.org/content/i-dont-feel-i-belong-anywhere" class="link">How to not
+                feel
+                like you don't belong anywhere. </a> <br>
+              <a href="https://www.youtube.com/watch?v=_re6AX3Mi4s&ab_channel=TEDxTalks" class="link">Tedx Talk on How
+                to get
+                over depression in 3 easy steps. </a> <br>
+              <% } %>
     </p>
 
     <span id="warning">
       <span id="id4">Warning:</span> This is just a prototype and is, by no means, exhaustive in its diagnostics. If you
       think you are not feeling well,
       please seek professional guidance!
+      <br><br><br><br>
+      <%if(score>15) { %>
+        <p id="help">
+          If you are living in USA, try calling the following free helplines:
+          <br><br>
+          Emergency Medical Services — 911
+          <br>
+          SAMHSA Treatment Referral Helpline, 1-877-SAMHSA7 (1-877-726-4727)
+        </p>
+        <% } %>
     </span>
   </div>
 

@@ -1,7 +1,21 @@
 # Health Web App
 This is a prototype of a Health Web App in which users can take free online mental and physical health tests and make an appointment to a doctor.
 
-Visit the website: https://health-web-app.herokuapp.com/
+Steps to run this website in your local:
+
+1. Clone this repository in your local using `git clone [url of this repository]`
+
+2. Install the dependencies using `npm install`
+
+3.  Run the server using `node server.js`
+
+4. Open `locoalhost:3000` in your browser to view the application.
+
+   
+
+Or Visit the website live (it might stop working because I use unpaid version of heroku):
+
+ https://health-web-app.herokuapp.com/
 
 ## Technologies used:
 * #### Node.js, Express.js (for backend server)
